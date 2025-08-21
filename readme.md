@@ -1,10 +1,11 @@
 <div align="center">
 
-# 💼 ResuMatch
-<em>AI-powered resume analysis, smart job matching, and interview practice — all in one.</em>
+# 💼 TalentCraft
+<em>Discover TalentCraft, the ultimate AI-driven career companion that helps job seekers optimize their resumes, uncover skill gaps, and prepare smarter for interviews.
+AI-powered resume analysis, smart job matching, and interview practice — all in one.</em>
 
 <p>
-  <img src="/screenshot/home.png" alt="ResuMatch Banner" width="900" />
+  <img src="/screenshot/home.png" alt="TalentCraft Banner" width="900" />
 </p>
 
 <p>
@@ -26,17 +27,17 @@
   <a href="https://jwt.io/">
     <img alt="JWT" src="https://img.shields.io/badge/JWT-Auth-000000?logo=jsonwebtokens&logoColor=white" />
   </a>
-  <a href="https://github.com/sayyedrabeeh/resume-ai-/stargazers">
-    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/sayyedrabeeh/resume-ai-?style=social" />
+  <a href="https://github.com/romilmonpara/TalentCraft-careertech-resumebuilder-jobmatcher/stargazers">
+    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/romilmonpara/TalentCraft-careertech-resumebuilder-jobmatcher?style=social" />
   </a>
-  <a href="https://github.com/sayyedrabeeh/resume-ai-/forks">
-    <img alt="GitHub Forks" src="https://img.shields.io/github/forks/sayyedrabeeh/resume-ai-?style=social" />
+  <a href="https://github.com/romilmonpara/TalentCraft-careertech-resumebuilder-jobmatcher/forks">
+    <img alt="GitHub Forks" src="https://img.shields.io/github/forks/romilmonpara/TalentCraft-careertech-resumebuilder-jobmatcher?style=social" />
   </a>
-  <a href="https://github.com/sayyedrabeeh/resume-ai-/issues">
-    <img alt="GitHub Issues" src="https://img.shields.io/github/issues/sayyedrabeeh/resume-ai-" />
+  <a href="https://github.com/romilmonpara/TalentCraft-careertech-resumebuilder-jobmatcher/issues">
+    <img alt="GitHub Issues" src="https://img.shields.io/github/issues/romilmonpara/TalentCraft-careertech-resumebuilder-jobmatcher" />
   </a>
-  <a href="https://github.com/sayyedrabeeh/resume-ai-/pulls">
-    <img alt="GitHub PRs" src="https://img.shields.io/github/issues-pr/sayyedrabeeh/resume-ai-" />
+  <a href="https://github.com/romilmonpara/TalentCraft-careertech-resumebuilder-jobmatcher/pulls">
+    <img alt="GitHub PRs" src="https://img.shields.io/github/issues-pr/romilmonpara/TalentCraft-careertech-resumebuilder-jobmatcher" />
   </a>
   <a href="./LICENSE">
     <img alt="License" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
@@ -44,19 +45,19 @@
 </p>
 
 <p>
-  <a href="#-live-demo">Demo</a> •
-  <a href="#-overview">Docs</a> •
-  <a href="https://github.com/sayyedrabeeh/resume-ai-/issues">Issues</a>
+  <a href="#live-demo">Demo</a> •
+  <a href="#overview">Docs</a> •
+  <a href="https://github.com/romilmonpara/TalentCraft-careertech-resumebuilder-jobmatcher/issues">Issues</a>
 </p>
 
 </div>
 
 ## 📌 Overview
 
-ResuMatch is a full‑stack platform that analyzes resumes, extracts skills and experience, and compares them against job descriptions to produce a match score with actionable feedback. It also includes an HR interview practice assistant and a simple resume builder to generate polished PDFs.
+TalentCraft is a full‑stack platform that analyzes resumes, extracts skills and experience, and compares them against job descriptions to produce a match score with actionable feedback. It also includes an HR interview practice assistant and a simple resume builder to generate polished PDFs.
 
 <div align="center">
-  <img src="/screenshot/login.png" alt="ResuMatch Login" width="700" />
+  <img src="/screenshot/login.png" alt="TalentCraft Login" width="700" />
 </div>
 
 ## 🎮 Live Demo
@@ -190,45 +191,66 @@ Client‑server architecture:
 ## 🖥️ Frontend Structure
 
 ```
-src/
-├── components/         # Reusable UI components
-│   ├── HRChatBot.jsx   # Interview practice chatbot
-│   ├── HRQuestionsPage.jsx # HR questions display component
-│  
-├── pages/              # Page components
-│   ├── Login.jsx       # User login
-│   ├── Signup.jsx      # New user registration
-│   ├── Dashboard.jsx   # Main user dashboard
-│   ├── ResumeUpload.jsx # Resume upload interface
-│   ├── JobMatcher.jsx  # Job matching tool
-│   ├── JobMatches.jsx  # Matched jobs listing
-│   ├── Profile.jsx     # User profile management
-│   ├── HRInterviewPractice.jsx # Interview practice page
-│   └── ...
-├── api/                # API communication
-│   ├── axiosInstance.js # Configured Axios client
-│   └── axiosConfig.js  # Axios configuration  
-│   └── ...              
-└── App.jsx             # Main application component
+ai_resume_matcher/frontend/
+├── public/
+│   ├── index.html
+│   ├── logo.png
+│   └── p.avif
+├── src/
+│   ├── api/
+│   │   ├── axiosConfig.js
+│   │   └── axiosInstance.js
+│   ├── components/
+│   │   ├── HRChatBot.jsx
+│   │   ├── HRQuestionsPage.jsx
+│   │   ├── PrivateRoute.js
+│   │   └── PublicRoute.js
+│   ├── pages/
+│   │   ├── Assignments.jsx
+│   │   ├── HRInterviewPractice.jsx
+│   │   ├── Roadmap.jsx
+│   │   ├── TrainingDashboard.jsx
+│   │   ├── home.jsx
+│   │   ├── jobmatch.jsx
+│   │   ├── jobs.jsx
+│   │   ├── landing.jsx
+│   │   ├── me.jsx
+│   │   ├── profile.jsx
+│   │   ├── resumebuilder.jsx
+│   │   ├── upload.jsx
+│   │   ├── Progress.jsx
+│   │   ├── Login.jsx
+│   │   └── Signup.jsx
+│   ├── App.jsx
+│   ├── index.js
+│   └── main.jsx
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
 ```
 
 ## 🔧 Backend Structure
 
 ```
-resume_matcher/
-├── users/
-│   ├── models.py         # Profile data model
-│   ├── serializers.py    # Data serialization
-│   ├── views.py          # Resume upload & processing
-├── match/
-│   ├── matching.py       # Skill extraction & match scoring
-│   ├── views.py          # Match processing & job fetching                  
-├── jobs/                 # External job integration
-├── chatbot/
-│   ├── views.py          # HR interview questions and chatbot logic
-│   ├── questions.py      # HR interview questions database
-├── resume_builder/
-│   ├── views.py          # PDF resume generation using ReportLab
+ai_resume_matcher/backend/
+├── manage.py
+├── core/
+│   ├── settings.py
+│   ├── urls.py
+│   ├── asgi.py
+│   └── wsgi.py
+├── apps/
+│   ├── users/
+│   ├── match/
+│   │   └── matching.py
+│   ├── jobs/
+│   ├── chatbot/
+│   ├── resumes/
+│   └── training/
+├── media/
+├── requirements.txt
+└── db.sqlite3 (dev)
 ```
 
 ## 🧠 Algorithm & Logic
@@ -281,8 +303,8 @@ resume_matcher/
 
 ### Frontend
 ```bash
-git clone https://github.com/sayyedrabeeh/resume-ai-.git
-cd ai_resume_matcher/frontend
+git clone https://github.com/romilmonpara/TalentCraft-careertech-resumebuilder-jobmatcher.git
+cd TalentCraft-careertech-resumebuilder-jobmatcher/ai_resume_matcher/frontend
 npm install
 npm start
 ```
