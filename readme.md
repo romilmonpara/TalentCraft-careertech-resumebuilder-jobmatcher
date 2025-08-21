@@ -272,10 +272,6 @@ ai_resume_matcher/backend/
 2) Keyword‑based answer evaluation with feedback
 3) Suggestions to improve responses
 
-<div align="center">
-  <img src="/screenshot/chatbot.png" alt="Chatbot Flow" width="850" />
-</div>
-
 ### Resume Builder Engine
 1) Dynamic layout and pagination
 2) Section prioritization for impact
